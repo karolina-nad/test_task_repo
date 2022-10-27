@@ -1,0 +1,19 @@
+.input {
+  width: 328px;
+  height: 54px;
+  color: #B4B4B4;
+
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  @include onTablet {
+    width: 380px;
+  }
+
+  &__file {
+    display: none;
+  }
+}

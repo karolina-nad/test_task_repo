@@ -1,0 +1,42 @@
+.app{
+  &__users {
+    display: flex;
+    justify-content: center;
+    weight: 100vw;
+    margin-bottom: 140px;
+  }
+
+  &__users-title {
+    margin-bottom: 50px;
+  }
+
+  &__users-block {
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+
+    @include onDesktop {
+      width: 1170px;
+    }
+  }
+
+  &__users-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 20px;
+
+    @include onTablet {
+      gap: 16px;
+    }
+
+    @include onBigTablet {
+      gap: 29px;
+    }
+  }
+
+  &__users-button {
+    width: 120px;
+  }
+}

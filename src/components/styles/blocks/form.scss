@@ -1,0 +1,96 @@
+.app {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    weight: 100vw;
+    text-align: center;
+  }
+
+  &__form-title {
+    margin-bottom: 50px;
+  }
+
+  &__inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto 50px;
+  }
+
+  &__form-button {
+    width: 100px;
+    margin: 0 auto 100px;
+  }
+
+  &__form-radio-text {
+    text-align: start;
+  }
+
+  &__form-file-button {
+    display: inline-block;
+
+    width: 83px;
+    height: 54px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 54px;
+  }
+
+  &__form-file-name {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 245px;
+    height: 56px;
+    padding: 14px 16px;
+    border: 1px solid #D0CFCF;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #F8F8F8;
+
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: start;
+    text-overflow: ellipsis;
+
+    @include onTablet {
+      width: 297px;
+    }
+
+    &::placeholder {
+      color: #7E7E7E;
+    }
+  }
+
+  &__form-file-error {
+    padding-left: 16px;
+    text-align: start;
+    color: #f44336;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__form-created-user {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    background-image: url("../../images/success-image.svg");
+  }
+}
+
+.error {
+  border-color: #f44336;
+
+  &:disabled {
+    border-left: 0px;
+  }
+}

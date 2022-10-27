@@ -1,0 +1,43 @@
+.user {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 328px;
+  height: 254px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 20px;
+
+  @include onTablet {
+    width: 344px;
+  }
+
+  @include onBigTablet {
+    width: 282px;
+  }
+
+  @include onDesktop {
+    width: 370px;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__info-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

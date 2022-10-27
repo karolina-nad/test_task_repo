@@ -1,0 +1,16 @@
+@import "fonts";
+@import "normalize";
+@import "mixins";
+@import "./blocks/button";
+@import "./blocks/input";
+@import "./blocks/header";
+@import "./blocks/banner";
+@import "./blocks/userCard";
+@import "./blocks/users";
+@import "./blocks/form";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: #F8F8F8;
+}

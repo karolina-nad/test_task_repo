@@ -1,0 +1,37 @@
+.app {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    weight: 100vw;
+    height: 60px;
+  }
+
+  &__header-block {
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    height: 34px;
+    margin: 0 16px;
+    background-image: url("../../images/Logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include onTablet {
+      margin: 0 32px;
+    }
+
+    @include onBigTablet {
+      margin: 0 60px;
+    }
+
+    @include onDesktop {
+      width: 1170px;
+    }
+  }
+
+  &__header-button {
+    width: 100px;
+    margin-left: 10px;
+  }
+}
